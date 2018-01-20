@@ -321,7 +321,7 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    background: rgb(240, 233, 233);
+                    background-color: rgb(240, 233, 233);
                 }
                 
                 .day {
@@ -332,16 +332,6 @@
                     height: 20%;
                     background: rgb(230, 221, 221);
                     color: rgb(88, 18, 24);
-                }
-                
-                .periscope {
-                    height: 70%;
-                    width: 30%;
-                    background-image: url("comingsoon.png");
-                    background-size: 20% 30%;
-                    background-repeat: repeat;
-                    background-attachment: fixed;
-                    border-radius: 50%;
                 }
                 
                 #upcoming_event {
@@ -356,4 +346,23 @@
                 
                 .date>h1 {
                     text-align: left;
+                }
+                
+                .bg-image {
+                    background-image: url("logo1.png");
+                    background-repeat: space;
+                    background-blend-mode: soft-light;
+                    background-size: 200px 200px;
+                    background-origin: content-box;
+                }
+                
+                .periscope {
+                    height: 70%;
+                    width: 30%;
+                    background-image: url("comingsoon.png");
+                    background-size: 20% 30%;
+                    background-repeat: repeat;
+                    background-attachment: fixed;
+                    border-radius: 50%;
+                    box-shadow: inset 2px 2px 30px rgb(255, 255, 255);
                 }

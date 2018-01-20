@@ -21,23 +21,30 @@ $(window).scroll(function() {
     }
     if (wScroll > $('.upcoming_event').offset().top - $(window).height()) {
         var w = $('.date').width() - $('.date>h1').width();
+        var w1 = $('.day').width() - $('.day>h1').width();
+
         var offset = Math.max(0, wScroll - $('.date').offset().top + w);
+        var offset1 = Math.max(0, wScroll - $('.date').offset().top + w1);
         console.log("offset " + offset);
         console.log("width" + w);
         if (offset > w) {
             offset = w;
         }
+        if (offset1 > w1) {
+            offset1 = w1;
+        }
         $('.date>h1').css({
             'transform': 'translate(' + offset + 'px)'
         });
         $('.day>h1').css({
-            'transform': 'translate(-' + offset + 'px)'
+            'transform': 'translate(-' + offset1 + 'px)'
         });
 
 
     }
 });
 $(window).ready(function() {
+
     var index = 0;
     showSlides();
 
